@@ -37,15 +37,13 @@ input[type="text"],input[type="password"]{
 }
 
 input[type="submit"]{
-    background-color: rgb(192, 32, 32);
+    background-color: rgb(225, 248, 35);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 9px;
-    margin-left: 30%;
-    width: 184px;
-    margin-top: 2%;
+    width: 90px;
     border-radius: 15px;
-    align-items: center;
     font-size: 15px;
+    float: right;
 }
 
 .con{
@@ -53,3 +51,11 @@ input[type="submit"]{
     justify-content: center;
 }
 
+input[type="button"]{
+    width:90px;
+    padding:9px;
+    border-radius: 15px;
+    float: left;
+    font-size: 15px;
+    background-color: rgb(255, 248, 35);
+}
