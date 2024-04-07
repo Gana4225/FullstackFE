@@ -37,7 +37,7 @@ input[type="text"],input[type="password"]{
 }
 
 input[type="submit"]{
-    background-color: rgb(225, 248, 35);
+    background-color: rgb(234, 255, 42);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 9px;
     width: 90px;
