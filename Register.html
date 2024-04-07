@@ -9,18 +9,18 @@
 <body>
     <div class="con">
     <div class="container">
-    <form action="Regsuc.php" method="post"> 
+    <form action="Regsuc.php" method="POST"> 
         <u><h3>Registration </h3></u>
-        <label>Account No</label>
-        <input type="text" placeholder="Enter your account number">
-        <label>IFSC code</label>
-        <input type="text" placeholder="Enter your IFSC code">
-        <label>username</label>
-        <input type="text" placeholder="Choose username">
-        <label>Password</label>
-        <input type="password" placeholder="Choose a password">
-        <label>Re-type password</label>
-        <input type="text" placeholder="Confirm password">
+        <label for="acno">Account No</label>
+        <input type="text" name="acno" placeholder="Enter your account number">
+        <label for="ifsc">IFSC code</label>
+        <input type="text" name="ifsc" placeholder="Enter your IFSC code">
+        <label for="un">username</label>
+        <input type="text" name="un" placeholder="Choose username">
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" placeholder="Choose a password">
+        <label for="rpwd">Re-type password</label>
+        <input type="text" name="rpwd" placeholder="Confirm password">
         <input type="submit" value="Register">
         </form>
         <p>If you already have an account <a href="login.html">click here</a></p>
