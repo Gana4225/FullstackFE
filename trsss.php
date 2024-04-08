@@ -35,6 +35,20 @@ $gt=$nm11+$amt;
 if($acno1!=$acno)
 {
 
+$que="select acno from cus where acno='$acno'";
+$aaa=$conn->query($que);
+$a2268 = $aaa->fetch_assoc();
+$a22=$a2268['acno'];
+$que1="select acno from cus where acno='$acno1'";
+$aaa1=$conn->query($que1);
+$a2215= $aaa1->fetch_assoc();
+$a221=$a2215['acno'];
+
+if($acno1==$a221)
+{
+    if($acno==$a22)
+    {
+
 if($nm1>=$amt)
 {
 $q2="update cus set amount='$g' where acno='$acno1'";
@@ -53,8 +67,19 @@ else{
 }
 }
 else{
-    echo "Cannot transfer to the same account";
+     echo "Receiver account is invalid";
 }
+}
+else{
+    echo "Sender account number is invalid";
+}
+}
+else{
+    echo "Cannot transfer to the same account";
+    
+}
+
+
 
 
     $conn->close();
