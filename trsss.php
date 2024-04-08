@@ -18,8 +18,10 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $hi=$_POST['hij'];
-    echo $hi;
+    $acno=$_POST['acno'];
+    $amt=$_POST['amt'];
+
+    echo 100+$amt;
     $conn->close();
     
 
