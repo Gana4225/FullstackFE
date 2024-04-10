@@ -10,12 +10,16 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+
+
 $un=$_POST['un'];
 $pwd=$_POST['pwd'];
 $q="select username from register where username='$un'";
 $res=$conn->query($q);
 $row = $res->fetch_assoc();
 $nm=$row['username'];
+session_start();
+$_SESSION['nm']=$nm;
 
 $q1="select password from register where password='$pwd'";
 $res1=$conn->query($q1);
@@ -35,3 +39,7 @@ else{
     echo "incorrect username";
 }
 
+
+
+
+?>

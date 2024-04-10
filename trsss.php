@@ -58,6 +58,7 @@ $q22="update cus set amount='$gt' where acno='$acno'";
 $res12=$conn->query($q22);
 
 echo "Transaction Successfull";
+session_start();
 
   
 }
