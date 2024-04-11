@@ -10,10 +10,14 @@
       <div class="con">
         
         <div class="container">
+            
+          <?php
+          $hij=$_SESSION['jk'];
+          echo "your acno is:.$hij";
+          ?>
+
             <u><h1>Send money to</h1></u>
             <form action="trsss.php" method="post">
-            <label for="acno1">sAccount NO</label>
-            <input type="text" name="acno1" placeholder="Enter your account Number">
             <label for="acno">rAccount NO</label>
             <input type="text" name="acno" placeholder="Enter Receivers account Number">
             <label for="ifsc">IFSC</label>
